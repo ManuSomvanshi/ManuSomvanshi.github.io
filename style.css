@@ -1,0 +1,131 @@
+/* Text formatting */
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #181825;
+  color: #cdd6f4;
+  text-align: left;
+  font-family: Helvetica, sans-serif;
+  font-size: 130%;
+}
+
+.main-header {
+  margin-top:0;
+  font-size: 500%;
+  border-bottom:5px solid #f38ba8;
+  margin: 200px;
+}
+
+.top-matter {
+  background-image:url("res/galaxy-waves.jpg");
+}
+
+.content {
+  margin: 200px;
+}
+
+h2 {
+  border-left: 3px solid #cba6f7;
+  padding-left: 10px;
+}
+
+footer {
+  font-size: 80%;
+  text-align: right;
+  margin-right: 50px;
+  margin-bottom: 15px;
+}
+
+hr {
+  color: #7f849c;
+  margin-left: 1000px; 
+  margin-right: 50px;
+}
+
+.type1 {
+  font-size: 130%;
+}
+
+.lists, .axioms {
+  list-style: decimal;
+  margin-left: 20px;
+}
+
+.axioms {
+  list-style: none outside;
+}
+
+.lists li, .axioms li {
+  color: #a6adc8;
+  border-left: 4px solid #b4befe;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+
+.axioms li::before {
+  content: attr(enum);
+  color:#b4befe;
+}
+
+/* Navigation bar */
+.nav {
+  margin-top: 0;
+  margin-left: 1200px;
+  margin-bottom:0;
+}
+.main-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.main-nav li {
+  float: left;
+  font-size: 130%;
+}
+
+.main-nav li a {
+  display: block;
+  color: #f38ba8;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.main-nav li a:hover {
+  background-color: #11111b;
+  border-bottom: 2px solid #eba0ac;
+  color: #eba0ac;
+}
+
+.main-nav li a:active {
+  color: #f2cdcd;
+}
+
+/* Links */
+a:link {
+  color: #89b4fa;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #f5c2e7;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #89b4fa;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #f9e2af;
+  background-color: transparent;
+  text-decoration: underline;
+}
