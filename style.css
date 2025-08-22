@@ -8,12 +8,12 @@ body {
   color: #cdd6f4;
   text-align: left;
   font-family: Helvetica, sans-serif;
-  font-size: 130%;
+  font-size: 1.5vw;
 }
 
 .main-header {
   margin-top:0;
-  font-size: 500%;
+  font-size: 5vw;
   border-bottom:5px solid #f38ba8;
   margin: 200px;
 }
@@ -34,14 +34,14 @@ h2 {
 footer {
   font-size: 80%;
   text-align: right;
-  margin-right: 50px;
+  margin-right: 3%;
   margin-bottom: 15px;
 }
 
 hr {
   color: #7f849c;
-  margin-left: 1000px; 
-  margin-right: 50px;
+  margin-left: 50%; 
+  margin-right: 3%;
 }
 
 .type1 {
@@ -72,7 +72,7 @@ hr {
 /* Navigation bar */
 .nav {
   margin-top: 0;
-  margin-left: 1200px;
+  margin-left:70%;
   margin-bottom:0;
 }
 .main-nav {
@@ -84,14 +84,15 @@ hr {
 
 .main-nav li {
   float: left;
-  font-size: 130%;
+  font-size: 1.5vw;
 }
 
 .main-nav li a {
   display: block;
   color: #f38ba8;
   text-align: center;
-  padding: 16px;
+  padding-left: 2vw;
+  padding-top: 10px;
   text-decoration: none;
 }
 
@@ -128,4 +129,10 @@ a:active {
   color: #f9e2af;
   background-color: transparent;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+  .content, .main-header {
+    margin: 50px;
+  }
 }
