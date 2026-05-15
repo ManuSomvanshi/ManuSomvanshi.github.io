@@ -1,0 +1,826 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <link href="./styles.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script
+            id="MathJax-script"
+            async
+            src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"
+        ></script>
+        <style>
+          .font-headline {
+            font-family: 'Newsreader', sans-serif;
+          }
+
+          .font-body {
+            font-family: 'Inter', sans-serif;
+          }
+
+          .font-label {
+            font-family: 'Space Grotesk', sans-serif;
+          }
+          a:hover {
+              text-decoration: underline;
+          }
+        </style>
+        <title>Manvendra's Homepage</title>
+    </head>
+    <body
+        class="bg-ctp-base font-body text-ctp-text selection:bg-ctp-surface2 selection:text-ctp-rosewater"
+    >
+        <!-- TopNavBar -->
+        <nav
+            class="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-5xl rounded-full px-6 py-3 bg-ctp-mantle/70 backdrop-blur-xl flex justify-between items-center z-50 shadow-[0_20px_40px_rgba(0,0,0,0.2)] border border-ctp-surface0/30"
+        >
+            <div class="text-2xl font-headline italic text-ctp-rosewater">
+                Manvendra Somvanshi
+            </div>
+
+            <div
+                class="hidden md:flex items-center gap-18 font-headline italic tracking-tight"
+            >
+                <a
+                    class="text-ctp-subtext0 hover:scale-105 transition-transform duration-300 hover:border-b-2 hover:border-ctp-blue pb-1 focus:text-ctp-blue focus:font-semibold"
+                    style="text-decoration: none;"
+                    href="#about"
+                    >About</a
+                >
+                <a
+                    class="text-ctp-subtext0 hover:scale-105 transition-transform duration-300 hover:border-b-2 hover:border-ctp-blue pb-1 focus:text-ctp-blue focus:font-semibold"
+                    style="text-decoration: none;"
+                    href="#research"
+                    >Research</a
+                >
+                <a
+                    class="text-ctp-subtext0 hover:scale-105 transition-transform duration-300 hover:border-b-2 hover:border-ctp-blue pb-1 focus:text-ctp-blue focus:font-semibold"
+                    style="text-decoration: none;"
+                    href="#notes"
+                    >Notes</a
+                >
+            </div>
+        </nav>
+
+        <main class="pt-32 pb-24 px-6 max-w-7xl mx-auto space-y-32">
+            <!-- Introduction -->
+            <section
+                class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
+                id="about"
+                data-aos="fade-in"
+                data-aos-easing="ease-in-out"
+            >
+                <div class="lg:col-span-7 space-y-8 order-2 lg:order-1">
+                    <h1
+                        class="font-headline text-6xl md:text-8xl text-ctp-text mt-20"
+                    >
+                        <span class="italic text-ctp-blue-500">About</span>
+                    </h1>
+                    <div
+                        class="inline-block px-3 py-1 bg-ctp-blue/10 rounded-full"
+                    >
+                        <span
+                            class="font-label text-ctp-blue text-xs uppercase tracking-widest"
+                            >Graduate Student</span
+                        >
+                    </div>
+                    <p
+                        class="font-body text-justify text-xl text-ctp-subtext1 max-w-2xl leading-relaxed"
+                    >
+                        I am a first year graduate student in mathematics
+                        currently at City University New York. I completed my BS-MS Dual degree with a major in
+                        Mathematics from the Indian Institute of Science
+                        Education and Research, Mohali in 2025. My master's
+                        thesis was completed jointly under the supervision of
+                        <a href="#" class="text-ctp-rosewater italic"
+                            >James Farre</a
+                        >
+                        at the Max Planck Institute for Mathematics in
+                        Sciences, Leipzig and
+                        <a href="#" class="text-ctp-rosewater italic"
+                            >Pranab Sardar</a
+                        >
+                        at IISER, Mohali.
+                    </p>
+                </div>
+                <div class="lg:col-span-5 order-2 lg:order-2 items-center">
+                    <div
+                        class="inline-block px-3 py-1 bg-ctp-blue/10 rounded-full"
+                    >
+                        <span
+                            class="font-label text-ctp-blue text-xs uppercase tracking-widest"
+                            >Latest Updates</span
+                        >
+                    </div>
+                    <ul class="text-sm text-ctp-subtext font-body text-justify">
+                        <li
+                            class="rounded-3xl bg-ctp-mantle mt-5 p-3 transition duration-75 ease-in-out hover:scale-105 hover:bg-ctp-crust"
+                        >
+                            The paper
+                            <span class="italic text-ctp-rosewater"
+                                >Minimising length of closed billiard
+                                trajectories on Hyperbolic Polygons</span
+                            >
+                            with John Parker has been published by the journal
+                            Dynamical Systems.
+                        </li>
+                        <li
+                            class="rounded-3xl bg-ctp-mantle mt-3 p-3 transition duration-75 ease-in-out hover:scale-105 hover:bg-ctp-crust"
+                        >
+                            My first single author paper
+                            <span class="italic text-ctp-rosewater">
+                                Hatcher-Thurston complex for surfaces with
+                                non-planar ends</span
+                            >
+                            is up on arXiv.
+                        </li>
+                    </ul>
+                    <div
+                        class="inline-block px-3 py-1 bg-ctp-blue/10 rounded-full mt-7"
+                    >
+                        <span
+                            class="font-label text-ctp-blue text-xs uppercase tracking-widest"
+                            >Contact</span
+                        >
+                    </div>
+                    <div class="rounded-3xl bg-ctp-mantle text-ctp-rosewater p-5 mt-5 text-center hover:bg-ctp-mantle hover:scale-110 transition">
+                        <span class="text-ctp-subtext1 capitalize">Email:</span> first-name <span class="text-ctp-subtext1">dot</span> last-name <span class="text-ctp-subtext1">at</span> pm <span class="text-ctp-subtext1">dot</span> me
+                    </div>
+                </div>
+                <div class="lg:col-span-12 order-3 lg:order-3 items-center">
+                    <div
+                        class="inline-block px-3 py-1 bg-ctp-blue/10 rounded-full"
+                    >
+                        <span
+                            class="font-label text-ctp-blue text-xs uppercase tracking-widest"
+                            >Federico Ardilla's Axioms</span
+                        >
+                    </div>
+                    <div class="flex flex-row gap-5">
+                        <div
+                            class="basis-1/4 bg-ctp-mantle rounded-3xl text-center text-xl text-ctp-subtext0 p-3 mt-8 transition duration-75 ease-in-out hover:scale-105 hover:bg-ctp-crust"
+                        >
+                            Mathematical potential is
+                            <span class="text-ctp-blue italic">equally</span>
+                            present in different groups, irrespective of
+                            geographic, demographic, and economic boundaries.
+                        </div>
+                        <div
+                            class="basis-1/4 bg-ctp-mantle rounded-3xl text-center text-xl text-ctp-subtext0 p-3 mt-8 transition duration-75 ease-in-out hover:scale-105 hover:bg-ctp-crust"
+                        >
+                            <span class="italic text-ctp-blue">Everyone</span>
+                            can have joyful, meaningful, and empowering
+                            mathematical experiences.
+                        </div>
+                        <div
+                            class="basis-1/4 bg-ctp-mantle rounded-3xl text-center text-xl text-ctp-subtext0 p-3 mt-8 transition duration-75 ease-in-out hover:scale-105 hover:bg-ctp-crust"
+                        >
+                            Mathematics is a
+                            <span class="italic text-ctp-blue"
+                                >powerful, malleable tool</span
+                            >
+                            that can be shaped and used differently by various
+                            communities to serve their needs.
+                        </div>
+                        <div
+                            class="basis-1/4 bg-ctp-mantle rounded-3xl text-center text-xl text-ctp-subtext0 p-3 mt-8 transition duration-75 ease-in-out hover:scale-105 hover:bg-ctp-crust"
+                        >
+                            <span class="italic text-ctp-blue">Every</span>
+                            student deserves to be treated with dignity and
+                            respect.
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Research -->
+            <section
+                class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
+                id="research"
+                data-aos="fade-in"
+                data-aos-easing="ease-in-out"
+            >
+                <h1
+                class="font-headline text-6xl md:text-8xl text-ctp-text mt-20">
+                    <span class="italic text-ctp-blue-500">Research</span>
+                </h1>
+                <div class="lg:col-span-12 space-y-8 order-2 lg:order-1">
+                    <p class="text-xl">
+                        I am currently interested in the study of
+                        <span class="italic text-ctp-blue">big</span> mapping
+                        class groups (MCG),
+                        <span class="italic text-ctp-blue">infinite-type</span>
+                        surfaces,
+                        <span class="italic text-ctp-blue">Teichmüller</span>
+                        theory, and
+                        <span class="italic text-ctp-blue">Hyperbolic</span>
+                        geometry. Broadly, I use techniques from geometric group
+                        theory, algebraic topology, combinatorial group theory,
+                        complex analysis, and Riemannian geometry in my work.
+                    </p>
+                    <p class="text-xl">
+                        I have also conducted research in mathematical physics
+                        as an undergrad. In particular, I was interested in
+                        studying a rigorous quantization process of a given
+                        physical phase space.
+                    </p>
+                    <!-- Geometric topology -->
+                    <div
+                        class="inline-block px-3 py-1 bg-ctp-blue/10 rounded-full"
+                    >
+                        <span
+                            class="font-label text-ctp-blue text-xs uppercase tracking-widest"
+                            >Geometric Topology</span
+                        >
+                    </div>
+                    <!-- ht-complex preprint -->
+                    <article
+                        class="group bg-ctp-mantle rounded-xl p-8 transition-all hover:bg-ctp-surface0 hover:shadow-2xl border border-transparent"
+                        data-aos="flip-left"
+                    >
+                        <div
+                            class="flex flex-col md:flex-row md:items-start justify-between gap-6"
+                        >
+                            <div class="space-y-3 flex-1">
+                                <div class="flex items-center gap-3">
+                                    <span
+                                        class="font-label text-[10px] uppercase tracking-widest text-outline"
+                                        >2026</span
+                                    >
+                                </div>
+                                <h3
+                                    class="font-headline text-3xl text-on-surface group-hover:text-primary transition-colors"
+                                >
+                                    Hatcher-Thurston complex for surfaces with
+                                    non-planar ends
+                                </h3>
+                                <p
+                                    class="font-label text-sm text-ctp-subtext0 italic"
+                                >
+                                    Preprint
+                                </p>
+                                <details class="group/abstract pt-4">
+                                    <summary
+                                        class="list-none flex items-center gap-2 font-label text-xs uppercase tracking-tighter"
+                                    >
+                                        <span
+                                            class="bg-ctp-rosewater-400/20 text-ctp-rosewater hover:bg-ctp-rosewater-400/10 p-3 rounded-3xl"
+                                            >Abstract</span
+                                        >
+                                    </summary>
+                                    <div
+                                        class="mt-4 p-6 bg-surface-container-highest/50 rounded-lg text-on-surface-variant text-sm leading-relaxed font-body border border-outline-variant/10"
+                                    >
+                                        In this paper, for each \(k\in
+                                        \mathbb{N}\), we define a complex
+                                        \(\Gamma_k(S)\) for an infinite-type
+                                        surface \(S\) with non-planar ends,
+                                        which serves as an analog of the
+                                        Hatcher-Thurston complex for the
+                                        infinite-type setting. We show that
+                                        \(\Gamma_k(S)\) is connected, simply
+                                        connected, and that the automorphism
+                                        group of \(\Gamma_k(S)\) is isomorphic
+                                        to the extended mapping class group.
+                                    </div>
+                                </details>
+                            </div>
+                            <div class="flex flex-row md:flex-col gap-3">
+                                <a
+                                    class="flex items-center text-ctp-subtext0 bg-ctp-rosewater-400/20 rounded-xl hover:scale-110 hover:bg-ctp-rosewater-400/10 transition shadow-sm p-3"
+                                    href="https://arxiv.org/abs/2602.22393"
+                                >
+                                    <span class="italic text-ctp-rosewater"
+                                        >arXiv</span
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- hyperboilic billiards -->
+                    <article
+                        class="group bg-ctp-mantle rounded-xl p-8 transition-all hover:bg-ctp-surface0 hover:shadow-2xl border border-transparent"
+                        data-aos="flip-left"
+                    >
+                        <div
+                            class="flex flex-col md:flex-row md:items-start justify-between gap-6"
+                        >
+                            <div class="space-y-3 flex-1">
+                                <div class="flex items-center gap-3">
+                                    <span
+                                        class="font-label text-[10px] uppercase tracking-widest text-outline"
+                                        >2025</span
+                                    >
+                                </div>
+                                <h3
+                                    class="font-headline text-3xl text-on-surface group-hover:text-primary transition-colors"
+                                >
+                                    Minimising Length of Closed Billiard
+                                    Trajectories on Hyperbolic Polygons
+                                </h3>
+                                <p class="text-ctp-text font-body">
+                                    <span class="text-ctp-subtext0">
+                                        with John Parker</span
+                                    >
+                                </p>
+                                <p
+                                    class="font-label text-sm text-ctp-subtext0 italic"
+                                >
+                                    Dynamical Systems
+                                </p>
+                                <details class="group/abstract pt-4">
+                                    <summary
+                                        class="list-none flex items-center gap-2 font-label text-xs uppercase tracking-tighter"
+                                    >
+                                        <span
+                                            class="bg-ctp-rosewater-400/20 text-ctp-rosewater hover:bg-ctp-rosewater-400/10 p-3 rounded-3xl"
+                                            >Abstract</span
+                                        >
+                                    </summary>
+                                    <div
+                                        class="mt-4 p-6 bg-surface-container-highest/50 rounded-lg text-on-surface-variant text-sm leading-relaxed font-body border border-outline-variant/10"
+                                    >
+                                        In a hyperbolic polygon any finite
+                                        collection of closed billiard
+                                        trajectories can be assigned an average
+                                        length function. In this paper, we
+                                        consider the average length of the
+                                        collection of cyclically related closed
+                                        billiard trajectories in even-sided
+                                        right-angled polygons and the collection
+                                        of reflectively related closed billiard
+                                        trajectories in Lambert quadrilaterals
+                                        with acute angle . We show that in the
+                                        former case the average length is
+                                        minimised by the regular evensided
+                                        right-angled polygon, and in the latter
+                                        case it is minimised by the Lambert
+                                        quadrilateral with a reflective symmetry
+                                        about its long axis. We use techniques
+                                        from Teichmueller theory to prove the
+                                        main theorems.
+                                    </div>
+                                </details>
+                            </div>
+                            <div class="flex flex-row md:flex-col gap-3">
+                                <a
+                                    class="flex items-center text-ctp-subtext0 bg-ctp-rosewater-400/20 rounded-xl hover:scale-110 hover:bg-ctp-rosewater-400/10 transition shadow-sm p-3"
+                                    href="https://arxiv.org/abs/2508.08897"
+                                >
+                                    <span class="italic text-ctp-rosewater"
+                                        >arXiv</span
+                                    >
+                                </a>
+                            </div>
+                            <div class="flex flex-row md:flex-col gap-3">
+                                <a
+                                    class="flex items-center text-ctp-subtext0 bg-ctp-rosewater-400/20 rounded-xl hover:scale-110 hover:bg-ctp-rosewater-400/10 transition shadow-sm p-3"
+                                    href="https://doi.org/10.1080/14689367.2026.2638479"
+                                >
+                                    <span class="italic text-ctp-rosewater"
+                                        >DOI</span
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- master's thesis -->
+                    <article
+                        class="group bg-ctp-mantle rounded-xl p-8 transition-all hover:bg-ctp-surface0 hover:shadow-2xl border border-transparent"
+                        data-aos="flip-left"
+                    >
+                        <div
+                            class="flex flex-col md:flex-row md:items-start justify-between gap-6"
+                        >
+                            <div class="space-y-3 flex-1">
+                                <div class="flex items-center gap-3">
+                                    <span
+                                        class="font-label text-[10px] uppercase tracking-widest text-outline"
+                                        >2025</span
+                                    >
+                                </div>
+                                <h3
+                                    class="font-headline text-3xl text-on-surface group-hover:text-primary transition-colors"
+                                >
+                                    On Geodesics of Thurston's Asymmetric Metric
+                                </h3>
+                                <p class="text-ctp-text font-body">
+                                    <span class="text-ctp-subtext0">
+                                        under supervision of James Farre and
+                                        Pranab Sardar</span
+                                    >
+                                </p>
+                                <p
+                                    class="font-label text-sm text-ctp-subtext0 italic"
+                                >
+                                    Master's Thesis
+                                </p>
+                                <details class="group/abstract pt-4">
+                                    <summary
+                                        class="list-none flex items-center gap-2 font-label text-xs uppercase tracking-tighter"
+                                    >
+                                        <span
+                                            class="bg-ctp-rosewater-400/20 text-ctp-rosewater hover:bg-ctp-rosewater-400/10 p-3 rounded-3xl"
+                                            >Abstract</span
+                                        >
+                                    </summary>
+                                    <div
+                                        class="mt-4 p-6 bg-surface-container-highest/50 rounded-lg text-on-surface-variant text-sm leading-relaxed font-body border border-outline-variant/10"
+                                    >
+                                        Thurston’s introduction of the
+                                        asymmetric metric on Teichmuller space
+                                        brought new interest to the hyperbolic
+                                        geometric perspective to Teichmuller
+                                        theory, which earlier was viewed in
+                                        terms of complex analysis. In this
+                                        dissertation, I go over several well
+                                        known results in hyperbolic geometry and
+                                        Teichmuller theory. Some theorems in
+                                        Thurston’s seminal paper [Thu98] are
+                                        proved in this dissertation in detail
+                                        using the proof ideas presented by
+                                        Thurston. In the last chapter of this
+                                        dissertation, the dilation ray
+                                        construction in [CF21] is shown to be a
+                                        Thurston geodesic for the case when the
+                                        geodesic lamination is a pants
+                                        decomposition.
+                                    </div>
+                                </details>
+                            </div>
+                            <div class="flex flex-row md:flex-col gap-3">
+                                <a
+                                    class="flex items-center text-ctp-subtext0 bg-ctp-rosewater-400/20 rounded-xl hover:scale-110 hover:bg-ctp-rosewater-400/10 transition shadow-sm p-3"
+                                    href="res/"
+                                >
+                                    <span class="italic text-ctp-rosewater"
+                                        >PDF</span
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Mathematical physics -->
+                    <div
+                        class="inline-block px-3 py-1 bg-ctp-blue/10 rounded-full"
+                    >
+                        <span
+                            class="font-label text-ctp-blue text-xs uppercase tracking-widest"
+                            >Mathematical Physics</span
+                        >
+                    </div>
+                    <!-- AB effect -->
+                    <article
+                        class="group bg-ctp-mantle rounded-xl p-8 transition-all hover:bg-ctp-surface0 hover:shadow-2xl border border-transparent"
+                        data-aos="flip-left"
+                    >
+                        <div
+                            class="flex flex-col md:flex-row md:items-start justify-between gap-6"
+                        >
+                            <div class="space-y-3 flex-1">
+                                <div class="flex items-center gap-3">
+                                    <span
+                                        class="font-label text-[10px] uppercase tracking-widest text-outline"
+                                        >2025</span
+                                    >
+                                </div>
+                                <h3
+                                    class="font-headline text-3xl text-on-surface group-hover:text-primary transition-colors"
+                                >
+                                    Magnetic flux and its topological effects in
+                                    Aharonov-Bohm effect
+                                </h3>
+                                <p class="text-ctp-text font-body">
+                                    <span class="text-ctp-subtext0">
+                                        with Jaffino D. Stargen</span
+                                    >
+                                </p>
+                                <p
+                                    class="font-label text-sm text-ctp-subtext0 italic"
+                                >
+                                    Preprint
+                                </p>
+                                <details class="group/abstract pt-4">
+                                    <summary
+                                        class="list-none flex items-center gap-2 font-label text-xs uppercase tracking-tighter"
+                                    >
+                                        <span
+                                            class="bg-ctp-rosewater-400/20 text-ctp-rosewater hover:bg-ctp-rosewater-400/10 p-3 rounded-3xl"
+                                            >Abstract</span
+                                        >
+                                    </summary>
+                                    <div
+                                        class="mt-4 p-6 bg-surface-container-highest/50 rounded-lg text-on-surface-variant text-sm leading-relaxed font-body border border-outline-variant/10"
+                                    >
+                                        The Aharonov-Bohm effect is a physical
+                                        phenomenon in which the quantum state of
+                                        a charged particle acquires a phase
+                                        shift that is directly proportional to
+                                        the magnetic flux, \(\Phi\), due to a
+                                        (classical) magnetic field, \({\mathbf
+                                        B}\), which is confined in a spatial
+                                        region from which the magnetic field
+                                        cannot escape. Even though the charged
+                                        particle is not allowed to interact with
+                                        the magnetic field, it accumulates a
+                                        phase shift that affects the
+                                        interference pattern produced. Not
+                                        surprisingly, this apparent nonlocality
+                                        is puzzling and counter intuitive. In
+                                        this work, we provide an explanation
+                                        that explains the physics underlying
+                                        this apparent nonlocality. We find that
+                                        the role of the confined magnetic field
+                                        is to impart a puncture in the
+                                        configuration space, \(\mathbb{R}^2\),
+                                        of the charge. Therefore, the quantum
+                                        state corresponding to the charged
+                                        quantum particle acquires the phase
+                                        shift due to its response to the
+                                        modified topology of the configuration
+                                        space, \(\mathbb{R}^2-\{0\}\),
+                                        corresponding to the charge.
+                                    </div>
+                                </details>
+                            </div>
+                            <div class="flex flex-row md:flex-col gap-3">
+                                <a
+                                    class="flex items-center text-ctp-subtext0 bg-ctp-rosewater-400/20 rounded-xl hover:scale-110 hover:bg-ctp-rosewater-400/10 transition shadow-sm p-3"
+                                    href="https://arxiv.org/abs/2511.11120"
+                                >
+                                    <span class="italic text-ctp-rosewater"
+                                        >arXiv</span
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <!-- Punctured plane -->
+                    <article
+                        class="group bg-ctp-mantle rounded-xl p-8 transition-all hover:bg-ctp-surface0 hover:shadow-2xl border border-transparent"
+                        data-aos="flip-left"
+                    >
+                        <div
+                            class="flex flex-col md:flex-row md:items-start justify-between gap-6"
+                        >
+                            <div class="space-y-3 flex-1">
+                                <div class="flex items-center gap-3">
+                                    <span
+                                        class="font-label text-[10px] uppercase tracking-widest text-outline"
+                                        >2025</span
+                                    >
+                                </div>
+                                <h3
+                                    class="font-headline text-3xl text-on-surface group-hover:text-primary transition-colors"
+                                >
+                                    Quantization of the Punctured Plane
+                                </h3>
+                                <p class="text-ctp-text font-body">
+                                    <span class="text-ctp-subtext0">
+                                        with Jaffino D. Stargen</span
+                                    >
+                                </p>
+                                <p
+                                    class="font-label text-sm text-ctp-subtext0 italic"
+                                >
+                                    Preprint
+                                </p>
+                                <details class="group/abstract pt-4">
+                                    <summary
+                                        class="list-none flex items-center gap-2 font-label text-xs uppercase tracking-tighter"
+                                    >
+                                        <span
+                                            class="bg-ctp-rosewater-400/20 text-ctp-rosewater hover:bg-ctp-rosewater-400/10 p-3 rounded-3xl"
+                                            >Abstract</span
+                                        >
+                                    </summary>
+                                    <div
+                                        class="mt-4 p-6 bg-surface-container-highest/50 rounded-lg text-on-surface-variant text-sm leading-relaxed font-body border border-outline-variant/10"
+                                    >
+                                        We quantize punctured plane,
+                                        \(X=\mathbb{R}^2-\{0\}\), employing
+                                        Isham's group theoretic quantization
+                                        procedure. After sketching out a brief
+                                        review of group theoretic quantization
+                                        procedure, we apply the quantization
+                                        scheme to the phase space, \(M=X \times
+                                        \mathbb{R}^2\), corresponding to the
+                                        punctured plane, \(X\). Particularly, we
+                                        find the canonical Lie group,
+                                        \mathscr{G}, corresponding to the phase
+                                        space, \(M=X \times \mathbb{R}^2\), to
+                                        be \(\mathscr{G} = \mathbb{R}^2 \rtimes
+                                        (SO(2)\times \mathbb{R}^+)\). We
+                                        establish an algebra homomorphism
+                                        between the Lie algebra corresponding to
+                                        the canonical group, \(\mathscr{G} =
+                                        \mathbb{R}^2 \rtimes (SO(2)\times
+                                        \mathbb{R}^+)\), and the smooth
+                                        functions, \(f\in C^{\infty}(M)\), in
+                                        the phase space, \(M=X \times
+                                        \mathbb{R}^2\). Making use of this
+                                        homomorphism and unitary representation
+                                        of the canonical group, \(\mathscr{G} =
+                                        \mathbb{R}^2 \rtimes (SO(2)\times
+                                        \mathbb{R}^+)\), we deduce a
+                                        quantization map that maps a subspace of
+                                        classical observables, \(f\in
+                                        C^{\infty}(M)\), to self-adjoint
+                                        operators on the Hilbert space,
+                                        \(\mathscr{H}\), which is the space of
+                                        all square integrable functions on
+                                        \(X=\mathbb{R}^2-\{0\}\) with respect to
+                                        the measure \(\text{d} \mu = \text{d}
+                                        \phi\text{d}\rho/(2\pi\rho)\).
+                                    </div>
+                                </details>
+                            </div>
+                            <div class="flex flex-row md:flex-col gap-3">
+                                <a
+                                    class="flex items-center text-ctp-subtext0 bg-ctp-rosewater-400/20 rounded-xl hover:scale-110 hover:bg-ctp-rosewater-400/10 transition shadow-sm p-3"
+                                    href="https://arxiv.org/abs/2511.11120"
+                                >
+                                    <span class="italic text-ctp-rosewater"
+                                        >arXiv</span
+                                    >
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Talks -->
+                    <div
+                        class="inline-block px-3 py-1 bg-ctp-blue/10 rounded-full"
+                    >
+                        <span
+                            class="font-label text-ctp-blue text-xs uppercase tracking-widest"
+                            >Talks</span
+                        >
+                    </div>
+                    <div class="flex flex-row gap-5">
+                        <div
+                            class="flex-auto bg-ctp-mantle rounded-3xl text-xl text-ctp-subtext0 transition duration-75 ease-in-out hover:scale-105 hover:bg-ctp-crust p-5"
+                        >
+                            <p class="text-ctp-subtext0 text-2xl">
+                                Dilation rays in Teichmüller space
+                            </p>
+                            <p class="text-ctp-subtext1 mt-3">
+                                <a
+                                    href="https://sites.google.com/view/yomaths-25/home"
+                                    class="text-ctp-rosewater"
+                                    >Young Mathematicians’ Symposium 2025</a
+                                >
+                            </p>
+                            <div
+                                class="bg-ctp-rosewater-400/30 p-3 text-sm text-center text-ctp-rosewater rounded-3xl w-20 mt-5 hover:scale-110 hover:bg-ctp-rosewater-400/10 transition shadow-sm"
+                            >
+                                <a href="#">Slides</a>
+                            </div>
+                        </div>
+                        <div
+                            class="flex-auto bg-ctp-mantle rounded-3xl text-xl text-ctp-subtext0 transition duration-75 ease-in-out hover:scale-105 hover:bg-ctp-crust p-5"
+                        >
+                            <p class="text-ctp-subtext0 text-2xl">
+                                Thurston’s Metric on the Teichmüller Space
+                            </p>
+                            <p class="text-ctp-subtext1 mt-3">
+                                <a
+                                    href="https://web.iisermohali.ac.in/dept/math/seminars/gsg/"
+                                    class="text-ctp-rosewater"
+                                >
+                                    Graduate Students Group Seminar</a
+                                >
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Notes -->
+            <section
+                class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center"
+                id="notes"
+                data-aos="fade-in"
+                data-aos-easing="ease-in-out"
+            >
+                <div class="lg:col-span-12 space-y-8 order-2 lg:order-1">
+                    <h1
+                        class="font-headline text-6xl md:text-8xl text-ctp-text mt-20"
+                    >
+                        <span class="italic text-ctp-blue-500">Notes</span>
+                    </h1>
+                    <div class="flex flex-row gap-5">
+                        <div
+                            class="bg-ctp-mantle rounded-3xl text-xl text-ctp-subtext0 transition duration-75 ease-in-out hover:scale-105 hover:bg-ctp-crust p-5"
+                        >
+                            <p class="text-ctp-rosewater">
+                                Retracts of Free groups
+                            </p>
+                            <p class="text-sm text-ctp-subtext1 mt-5">
+                                Presentation for a combinatorial group theory
+                                course
+                            </p>
+                            <div
+                                class="bg-ctp-rosewater-400/30 p-3 text-sm text-center text-ctp-rosewater rounded-3xl w-20 mt-5 hover:scale-110 hover:bg-ctp-rosewater-400/10 transition shadow-sm"
+                            >
+                                <a href="res/retractible.pdf">PDF</a>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-ctp-mantle rounded-3xl text-xl text-ctp-subtext0 transition duration-75 ease-in-out hover:scale-105 hover:bg-ctp-crust p-5"
+                        >
+                            <p class="text-ctp-rosewater">
+                                \(\text{SL}_2(\mathbb{R})/\text{SO}_2(\mathbb{R})\)
+                                and the hyperbolic plane
+                            </p>
+                            <p class="text-sm text-ctp-subtext1 mt-5">
+                                Presentation for Fuchsian groups course
+                            </p>
+                            <div
+                                class="bg-ctp-rosewater-400/30 p-3 text-sm text-center text-ctp-rosewater rounded-3xl w-20 mt-5 hover:scale-110 hover:bg-ctp-rosewater-400/10 transition shadow-sm"
+                            >
+                                <a href="res/upper-half-plane.pdf">PDF</a>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-ctp-mantle rounded-3xl text-xl text-ctp-subtext0 transition duration-75 ease-in-out hover:scale-105 hover:bg-ctp-crust p-5"
+                        >
+                            <p class="text-ctp-rosewater">
+                                Elliptic curve Diffie-Hellman key exchange
+                            </p>
+                            <p class="text-sm text-ctp-subtext1 mt-5">
+                                Presentation for algebraic curves course
+                            </p>
+                            <div
+                                class="bg-ctp-rosewater-400/30 p-3 text-sm text-center text-ctp-rosewater rounded-3xl w-20 mt-5 hover:scale-110 hover:bg-ctp-rosewater-400/10 transition shadow-sm"
+                            >
+                                <a href="res/ECDH.pdf">PDF</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-row gap-5">
+                        <div
+                            class="bg-ctp-mantle rounded-3xl text-xl text-ctp-subtext0 transition duration-75 ease-in-out hover:scale-105 hover:bg-ctp-crust p-5"
+                        >
+                            <p class="text-ctp-rosewater">
+                                Mapping Class Group of the torus and
+                                Nielsen-Thurston classification
+                            </p>
+                            <p class="text-sm text-ctp-subtext1 mt-5">
+                                Presentation to third-year math majors
+                            </p>
+                            <div
+                                class="bg-ctp-rosewater-400/30 p-3 text-sm text-center text-ctp-rosewater rounded-3xl w-20 mt-5 hover:scale-110 hover:bg-ctp-rosewater-400/10 transition shadow-sm"
+                            >
+                                <a href="res/mapping-class-group.pdf">PDF</a>
+                            </div>
+                        </div>
+                        <div
+                            class="bg-ctp-mantle rounded-3xl text-xl text-ctp-subtext0 transition duration-75 ease-in-out hover:scale-105 hover:bg-ctp-crust p-5"
+                        >
+                            <p class="text-ctp-rosewater">
+                                On Geodesics of Thurston's asymmetric metric
+                            </p>
+                            <p class="text-sm text-ctp-subtext1 mt-5">
+                                Poster presentation to undergraduates based on thesis work
+                            </p>
+                            <div
+                                class="bg-ctp-rosewater-400/30 p-3 text-sm text-center text-ctp-rosewater rounded-3xl w-20 mt-5 hover:scale-110 hover:bg-ctp-rosewater-400/10 transition shadow-sm"
+                            >
+                                <a href="res/poster.pdf">PDF</a>
+                            </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer
+            class="w-full py-16 border-t border-ctp-surface0/30 bg-ctp-mantle/50"
+        >
+            <div
+                class="flex flex-col items-center gap-6 w-full max-w-7xl mx-auto px-8"
+            >
+                <div
+                    class="font-label uppercase tracking-widest text-[10px] text-ctp-overlay1 mt-4 flex items-center gap-2"
+                    style=""
+                >
+                    Designed using
+                    <a
+                        class="text-ctp-rosewater font-bold hover:underline"
+                        href="https://github.com/catppuccin/catppuccin"
+                        >CATPPUCCIN</a
+                    >
+                </div>
+            </div>
+        </footer>
+        <!-- AOS script -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+    </body>
+</html>
